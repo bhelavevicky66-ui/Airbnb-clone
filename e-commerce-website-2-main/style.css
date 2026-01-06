@@ -556,9 +556,11 @@ nav.navbar-white .ri-menu-line {
     color: #000;
 }
 nav.navbar-white .register-btn:hover{
-    transition: transform 0.7s ease;
-    background: rgb(136, 137, 138);
-    color: rgb(26, 25, 26);
+    transition: all 0.3s ease;
+    background: #e74c3c;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
 }
 
 .navbar-white .active::after {
@@ -816,9 +818,12 @@ nav.navbar-white .register-btn:hover{
     font-size: 16px;
 }
 .check-form button:hover{
-    background: rgb(172, 169, 169);
-    color: #213e45;
+    background: #e74c3c;
+    color: #fff;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+    transition: all 0.3s ease;
 }
 .guest-field{
     flex: 1;
@@ -892,9 +897,12 @@ font-weight: 500;
     border-radius: 8px;
 }
 .cont:hover{
-    color: red;
-    background: #555;
-    border: 1px solid  #555;
+    background: #ff5361;
+    color: #fff;
+    border: 1px solid #ff5361;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 83, 97, 0.3);
+    transition: all 0.3s ease;
 }
 .pagination .have:hover{
     background:rgb(49, 49, 49) ;
@@ -902,10 +910,16 @@ font-weight: 500;
 }
 
 .container .start-btn:hover{
-    background: rgb(104, 102, 102);
-    color: #000;
+    background: #e74c3c;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+    transition: all 0.3s ease;
 }
 .cta .cta-btn:hover{
-    background: rgb(104, 102, 102) ;
-    color: black;
+    background: #e74c3c;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+    transition: all 0.3s ease;
 }
