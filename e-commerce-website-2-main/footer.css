@@ -222,6 +222,11 @@
         gap: 32px;
         margin-top: 32px;
         padding-top: 32px;
+        align-items: center; /* center child sections */
+    }
+
+    .footer-section {
+        text-align: center; /* center headings, lists, and content */
     }
     
     .footer-bottom {
@@ -234,6 +239,8 @@
     .footer-bottom-right {
         flex-direction: column;
         gap: 16px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -255,6 +262,16 @@
         /* center the title and categories */
         text-align: center;
     }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section ul li,
+    .footer-section ul li a {
+        text-align: center;
+        display: inline-block; /* avoid full-width list items */
+    }
     
     .language-currency {
         flex-direction: column;
@@ -265,5 +282,14 @@
     .language-currency span {
         width: 100%;
         text-align: center;
+    }
+
+    .footer-bottom-left p {
+        text-align: center;
+    }
+
+    .footer-bottom-right {
+        align-items: center;
+        justify-content: center;
     }
 }
