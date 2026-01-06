@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+
+</head>
+
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="index.html">
+            <img src="images/11-removebg-preview.png" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li> <a href="index.html" class="active">Popular Places</a></li>
+            <li> <a href="#">Travel Outside</a></li>
+            <li> <a href="second.html">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="ri-menu-line" onclick="togglebtn()"></i>
+    </nav>
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Weng House</h1>
+            <div class="row">
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-line"></i>
+                    <i class="ri-star-line"></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Uperla Sukar, Fatehpur, Dharamshala, Himachal Pradesh</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/house-1.png"> </div>
+            <div><img src="images/house-2.png"> </div>
+            <div><img src="images/house-3.png"> </div>
+            <div><img src="images/house-4.png"> </div>
+            <div><img src="images/house-5.png"> </div>
+        </div>
+        <div class="small-deatils">
+            <h2>Entire rental unit hostel by Brandon</h2>
+            <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>2000 ₹ / Day</h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+            <div>
+                <label>Check-in</label>
+                <input type="text" placeholder="Add date">
+            </div>
+            <div>
+                <label>Check-out</label>
+                <input type="text" placeholder="Add date">
+            </div>
+            <div class="guest-field">
+                <label>Guest</label>
+                <input type="text" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availablity</button>
+        </form>
+
+        <ul class="Details-list">
+            <li><i class="ri-home-4-fill"></i>Entire Home
+                <span>You will have the entire flat for you</span>
+            </li>
+            <li><i class="ri-paint-brush-fill"></i>Enhanced Clean
+                <span>This host has committed to Staybnb's cleaning process.</span>
+            </li>
+            <li><i class="ri-map-pin-fill"></i>Great Location
+                <span>90% of recent guest gave the location a star rating.</span>
+            </li>
+            <li><i class="ri-heart-fill"></i>Great Check-in Experience
+                <span>100% of recent guest gave the location a star rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-dec"> Gusts will be allocated on the ground floor acrounding to availability.You get a
+            comfortable twb bedroom apartment has a true city feeling. The price quoted is for
+            two guest,at the guest slot please mark the number of guests to get the exact price
+            for groups.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27004.263703673518!2d76.29856558529431!3d32.216813188221614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50df65bd7311%3A0x3e08bdb100c6dc10!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1734947276631!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>From the peaceful village of Uperla Sukar, Fatehpur, nestled in the heart of Himachal Pradesh.</b>
+            <p>It's like a home away from home.</p>
+        </div>
+        <hr class="line">
+
+        <div class="host">
+            <img src="images/host.png">
+            <div>
+                <h2>Hosted by Brandon</h2>
+                <p><span>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        <!-- <i class="ri-star-line"></i> -->
+                    </span>&nbsp; &nbsp; 245 reviews &nbsp; response rate 100% &nbsp; Response time:60 min </p>
+            </div>
+        </div>
+
+        <a href="#" class="cont">Contact Host</a>
+    </div>
+    <div class="container">
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <!-- Footer Column 1: About -->
+            <div class="footer-section">
+                <h3>About Staybnb</h3>
+                <p>
+                    Staybnb offers amazing travel and accommodation experiences tailored to meet your preferences.
+                    From budget stays to luxurious retreats, we ensure your journey is unforgettable.
+                </p>
+            </div>
+            <!-- Footer Column 2: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Popular Places</a></li>
+                    <li><a href="#">Travel Outside</a></li>
+                    <li><a href="#">Online Packages</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <!-- Footer Column 3: Contact -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: rohitverma75445@gmail.com</p>
+                <p>Phone: +91 9305926977</p>
+                <p>Address: Uperla Sukar, Fatehpur, Dharamshala, Himachal Pradesh</p>
+            </div>
+            <!-- Footer Column 4: Social Media -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                <a href="https://youtube.com/" target="_blank"><i class="ri-youtube-fill"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+
+            <p>Crafted with ❤️ and dedication by Rohit. Discover, Stay, and Cherish Unforgettable Memories!</p>
+        </div>
+
+        <script>
+            const navBar = document.getElementById("navBar");
+            function togglebtn() {
+                navBar.classList.toggle("hidemenu");
+            }
+        </script>
+</body>
+
+</html>
