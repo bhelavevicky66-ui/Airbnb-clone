@@ -21,9 +21,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 7%;
-    border: 2px solid white;
     /* position: fixed; */
 
+}
+
+nav:not(.navbar-white) {
+    border: none;
 }
 
 .logo {
@@ -444,12 +447,12 @@ nav .ri-menu-line {
         position: fixed;
         top: 0;
         z-index: 100;
-        display: inline-block;
+        display: block;
         width: 100%;
-        padding: 100px 7% 0;
+        padding: 90px 7% 18px;
         background: #fff;
         text-align: center;
-        max-height: 100px;
+        max-height: 86px;
         overflow: hidden;
         transition: max-height 0.5s;
     }
@@ -467,11 +470,16 @@ nav .ri-menu-line {
         background: #fff;
         border: 1px solid #ddd;
         color: #000;
+        border-radius: 22px;
+        padding: 10px 14px;
     }
 
     .register-btn {
-        margin: 15px auto 30px;
-        display: inline-block;
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 12px auto 0;
+        text-align: center;
     }
 
     nav .ri-menu-line {
@@ -490,7 +498,7 @@ nav .ri-menu-line {
     }
 
     .hidemenu {
-        max-height: 300px;
+        max-height: 520px;
     }
 
     .header h1 {
