@@ -14,6 +14,34 @@
 
 <body>
 
+    <input type="checkbox" id="registerModal" class="modal-toggle">
+    <div class="register-modal">
+        <label for="registerModal" class="modal-backdrop"></label>
+        <div class="modal-content">
+            <label for="registerModal" class="modal-close">×</label>
+            <h2>Register</h2>
+            <form class="register-form" action="#" method="post">
+                <div>
+                    <label for="regName">Full Name</label>
+                    <input id="regName" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="regEmail">Email</label>
+                    <input id="regEmail" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="regPhone">Phone</label>
+                    <input id="regPhone" name="phone" type="tel" placeholder="Enter your phone" required>
+                </div>
+                <div>
+                    <label for="regPassword">Password</label>
+                    <input id="regPassword" name="password" type="password" placeholder="Create password" required>
+                </div>
+                <button type="submit" class="register-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <div class="header">
         <nav id="navBar">
             <img src="images/11-removebg-preview.png" class="logo">
@@ -22,7 +50,7 @@
                 <li> <a href="house.html">Travel Outside</a></li>
                 <li> <a href="second.html">Online Packages</a></li>
             </ul>
-            <a href="#" class="register-btn">Register Now</a>
+            <label for="registerModal" class="register-btn">Register Now</label>
             <i class="ri-menu-line" onclick="togglebtn()"></i>
         </nav>
       

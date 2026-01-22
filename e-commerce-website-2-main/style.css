@@ -1164,3 +1164,110 @@ hr {
     text-align: left;
   }
 }
+
+.modal-toggle {
+     position: absolute;
+     opacity: 0;
+     pointer-events: none;
+ }
+
+ .register-modal {
+     position: fixed;
+     inset: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity 0.2s ease, visibility 0.2s ease;
+     z-index: 3000;
+ }
+
+ .register-modal .modal-backdrop {
+     position: absolute;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.55);
+ }
+
+ .register-modal .modal-content {
+     position: relative;
+     width: min(92vw, 420px);
+     background: #fff;
+     border-radius: 14px;
+     padding: 22px;
+     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+ }
+
+ .register-modal .modal-close {
+     position: absolute;
+     top: 10px;
+     right: 12px;
+     width: 34px;
+     height: 34px;
+     border-radius: 999px;
+     display: grid;
+     place-items: center;
+     background: #f2f2f2;
+     color: #111;
+     cursor: pointer;
+     font-size: 20px;
+     line-height: 1;
+ }
+
+ .register-modal .modal-close:hover {
+     background: #e9e9e9;
+ }
+
+ .register-modal h2 {
+     font-size: 22px;
+     font-weight: 600;
+     margin-bottom: 14px;
+     color: #111;
+ }
+
+ .register-form {
+     display: grid;
+     gap: 12px;
+ }
+
+ .register-form label {
+     font-size: 13px;
+     font-weight: 600;
+     color: #333;
+ }
+
+ .register-form input {
+     width: 100%;
+     padding: 12px 12px;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+     outline: none;
+     font-size: 14px;
+ }
+
+ .register-form input:focus {
+     border-color: #ff5a5f;
+     box-shadow: 0 0 0 3px rgba(255, 90, 95, 0.18);
+ }
+
+ .register-submit {
+     width: 100%;
+     border: 0;
+     border-radius: 12px;
+     padding: 12px 14px;
+     background: #ff5a5f;
+     color: #fff;
+     font-size: 15px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.2s ease;
+ }
+
+ .register-submit:hover {
+     background: #e04e52;
+ }
+
+ #registerModal:checked ~ .register-modal {
+     opacity: 1;
+     visibility: visible;
+ }
