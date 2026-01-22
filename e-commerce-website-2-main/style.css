@@ -40,13 +40,18 @@ nav {
 .nav-links li a {
     text-decoration: none;
     color: #000;
-
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 .nav-links li a:hover{
-    color: rgb(226, 221, 221);
-}
- .nav-links li a {
-    transition: color 0.3s ease; 
+    background: #f8f8f8;
+    border-color: #bbb;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 
@@ -433,8 +438,15 @@ nav .ri-menu-line {
     }
 
     nav .nav-links li {
-        margin: 10px;
+        margin: 10px 0;
         display: block;
+        text-align: center;
+    }
+
+    nav .nav-links li a {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
     }
 
     .register-btn {
