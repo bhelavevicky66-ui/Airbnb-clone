@@ -474,6 +474,17 @@ nav .ri-menu-line {
         padding: 10px 14px;
     }
 
+    nav:not(.navbar-white) .nav-links li a {
+        background: #fff;
+        border: 1px solid #ddd;
+        color: #000;
+    }
+
+    nav:not(.navbar-white) .nav-links li a:hover {
+        background: #f8f8f8;
+        border-color: #bbb;
+    }
+
     .register-btn {
         display: block;
         width: 100%;
