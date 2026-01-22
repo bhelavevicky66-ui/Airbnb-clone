@@ -20,7 +20,7 @@
         <div class="modal-content">
             <label for="registerModal" class="modal-close">×</label>
             <h2>Register</h2>
-            <form class="register-form" action="#" method="post">
+            <form class="register-form" action="#" method="post" onsubmit="return handleRegisterSubmit(event)">
                 <div>
                     <label for="regName">Full Name</label>
                     <input id="regName" name="name" type="text" placeholder="Enter your name" required>
@@ -316,6 +316,15 @@
         const navBar = document.getElementById("navBar");
         function togglebtn() {
             navBar.classList.toggle("hidemenu");
+        }
+
+        function handleRegisterSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            form.reset();
+            const modalToggle = document.getElementById("registerModal");
+            if (modalToggle) modalToggle.checked = false;
+            return false;
         }
     </script>
 </body>
