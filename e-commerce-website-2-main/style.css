@@ -39,7 +39,7 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 
 }
 .nav-links li a:hover{
@@ -322,17 +322,14 @@ nav {
 }
 
 .active::after {
-    content: '';
-    background: #fff;
-    /* width: 25px; */
-    /* height: 2px;  */
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -12px;
-    border-radius: 2px;
-
-}
+        content: '';
+        background: #000;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -12px;
+        border-radius: 2px;
+    }
 
 nav .ri-menu-line {
     display: none;
@@ -428,7 +425,7 @@ nav .ri-menu-line {
         display: inline-block;
         width: 100%;
         padding: 100px 7% 0;
-        background: #000;
+        background: #fff;
         text-align: right;
         max-height: 100px;
         overflow: hidden;
@@ -450,7 +447,7 @@ nav .ri-menu-line {
         position: fixed;
         top: 4%;
         right: 7%;
-        color: #fff;
+        color: #000;
         font-size: 28px;
     }
 
@@ -526,6 +523,95 @@ nav .ri-menu-line {
 
     .about-msg {
         font-size: 15px;
+    }
+
+    /* Travel Outside (house.html) Mobile Improvements */
+    .house-details {
+        padding: 0 5%; /* Reduced side padding for mobile */
+    }
+
+    .house-title h1 {
+        font-size: 32px;
+    }
+
+    .house-title .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .house-title .row div {
+        margin: 5px 0;
+    }
+
+    .gallery {
+        grid-template-areas: 
+            'first first'
+            '. .'
+            '. .';
+        /* Simplified grid for mobile, or better yet, just stack them */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery div img {
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .small-deatils h2 {
+        font-size: 20px;
+    }
+
+    .small-deatils h4 {
+        text-align: left; /* Align price to left on mobile */
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .check-form {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .check-form div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .check-form input {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+
+    .check-form button {
+        width: 100%;
+    }
+
+     /* Online Packages (second.html) Mobile Improvements */
+     .house {
+        flex-direction: column;
+    }
+
+    .house-img {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+    .house-info {
+        flex-basis: 100%;
+    }
+    
+    .house-price {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .map iframe {
+        height: 300px; /* Reduced height for mobile */
     }
 }
 
