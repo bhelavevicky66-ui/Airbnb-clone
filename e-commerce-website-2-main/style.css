@@ -56,19 +56,17 @@ nav {
 
 
 .register-btn {
-    background: #fff;
-    color: #000;
+    background: #ff5a5f;
+    color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
-}
-.register-btn:hover{
-    transition: color 0.3s ease; 
+    transition: background 0.3s ease;
 }
 
 .register-btn:hover {
-    color: #ff5361;
+    background: #e04e52;
 }
 
 
