@@ -37,7 +37,25 @@ nav {
     margin: 10px 30px;
 }
 
-.nav-links li a {
+nav:not(.navbar-white) .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav:not(.navbar-white) .nav-links li a:hover{
+    background: rgba(255, 255, 255, 0.14);
+    border-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+.navbar-white .nav-links li a {
     text-decoration: none;
     color: #000;
     padding: 8px 16px;
@@ -47,7 +65,8 @@ nav {
     transition: all 0.3s ease;
     display: inline-block;
 }
-.nav-links li a:hover{
+
+.navbar-white .nav-links li a:hover{
     background: #f8f8f8;
     border-color: #bbb;
     transform: translateY(-2px);
@@ -445,6 +464,9 @@ nav .ri-menu-line {
         display: block;
         width: 100%;
         margin: 5px 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        color: #000;
     }
 
     .register-btn {
