@@ -429,7 +429,7 @@ nav .ri-menu-line {
         width: 100%;
         padding: 100px 7% 0;
         background: #fff;
-        text-align: right;
+        text-align: center;
         max-height: 100px;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -448,8 +448,8 @@ nav .ri-menu-line {
     }
 
     .register-btn {
-        margin: 15px 0 30px 10px;
-        display: i inline-block;
+        margin: 15px auto 30px;
+        display: inline-block;
     }
 
     nav .ri-menu-line {
@@ -555,13 +555,17 @@ nav .ri-menu-line {
     }
 
     .gallery {
-        grid-template-areas: 
-            'first first'
-            '. .'
-            '. .';
-        /* Simplified grid for mobile, or better yet, just stack them */
-        display: flex;
+        display: flex !important;
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery > div {
+        width: 100%;
+    }
+
+    .gallery-img-1 {
+        width: 100%;
     }
 
     .gallery div img {
@@ -909,9 +913,11 @@ nav.navbar-white .register-btn:hover{
     outline: none;
     color: #fff;
     padding: 18px;
-    width: 295px;
+    width: 100%;
     border-radius: 8px;
     font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .check-form button:hover{
     background: #e74c3c;
